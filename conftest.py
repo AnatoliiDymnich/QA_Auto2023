@@ -1,6 +1,7 @@
 import pytest
 
-class User :
+
+class User:
 
     def __init__(self) -> None:
         self.name = None
@@ -14,14 +15,13 @@ class User :
         self.name = ""
         self.second_name = ""
 
-    
+
 
 @pytest.fixture
-def user() :
+def user():
     user = User()
     user.create()
 
     yield user
 
     user.remove
-
