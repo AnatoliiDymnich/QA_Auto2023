@@ -59,9 +59,9 @@ def test_detailed_orders():
     db = Database()
     orders = db.get_detailed_orders()
     print("Замовлення", orders)
-    assert len(orders) == 1
+    assert len(orders) == 2
 
-    assert orders [0][0] == 1
-    assert orders [0][1] == 'Sergii'
-    assert orders [0][2] == 'солодка вода'
-    assert orders [0][3] == 'з цукром'
+    assert orders [1][0] == 2
+    assert orders [1][1] == 'Anatolii'
+    assert orders [1][2] == 'печиво'
+    assert orders [1][3] == 'солодке'

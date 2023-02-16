@@ -28,4 +28,4 @@ def test_check_incorrect_username():
     assert driver.title == "Sign in to GitHub · GitHub"
 
     # закрити браузер
-
+    driver.close()
